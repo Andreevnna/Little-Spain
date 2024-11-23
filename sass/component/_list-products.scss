@@ -1,0 +1,28 @@
+// .list-products {
+//   ul {
+//     list-style: none;
+//     li {
+//       img {
+//         width: 221px;
+//       }
+//     }
+//   }
+// }
+
+.product__img {
+  height: 221px;
+  height: 221px;
+  overflow: hidden;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  img {
+    width: 100%;
+  }
+}
+.product{
+  column-gap: 10px;
+
+}

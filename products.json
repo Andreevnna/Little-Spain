@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Пармезан",
+    "description": "36 мес.",
+    "price": "3600",
+    "category": "cheese",
+    "images": "cheese.jpeg",
+    "country": "france"
+  }, 
+  {
+    "name": "Хамон Серано Блок",
+    "description": "36 мес.",
+    "price": "3400",
+    "category": "groceries",
+    "images": "hamon.jpeg",
+    "country": "france"
+  },
+  {
+    "name": "Набор сыров",
+    "description": "",
+    "price": "10000",
+    "category": "sets",
+    "images": "set.jpeg",
+    "country": "france"
+  },
+  {
+    "name": "Пармезан",
+    "description": "36 мес.",
+    "price": "3600",
+    "category": "cheese",
+    "images": "cheese.jpeg",
+    "country": "france"
+  }, 
+  {
+    "name": "Хамон Серано Блок",
+    "description": "36 мес.",
+    "price": "3400",
+    "category": "groceries",
+    "images": "hamon.jpeg",
+    "country": "france"
+  },
+  {
+    "name": "Набор сыров",
+    "description": "",
+    "price": "10000",
+    "category": "sets",
+    "images": "set.jpeg",
+    "country": "france"
+  }
+
+
+]

@@ -1,0 +1,32 @@
+.layout-2-columns {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+.layout-3-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.product__img {
+  height: 221px;
+  height: 221px;
+  overflow: hidden;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.product__img img {
+  width: 100%;
+}
+
+.product {
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+
+.wrapper {
+  max-width: 933px;
+  margin: auto;
+}/*# sourceMappingURL=style.css.map */
