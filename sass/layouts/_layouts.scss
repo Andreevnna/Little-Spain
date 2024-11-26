@@ -1,8 +1,28 @@
-.layout-2-columns {
-  display: grid;
-  grid-template-columns: 1fr 5fr;
-}
+// .layout-2-columns {
+//   display: grid;
+//   grid-template-columns: 1fr 5fr;
+// }
 .layout-3-columns {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  @include media-tablet {
+    grid-template-columns: 1fr 1fr;
+  }
+  @include media-mobile {
+    grid-template-columns: 1fr;
+  }
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.gap {
+  column-gap: 10px;
+}
+.gap-products {
+  column-gap: 76px;
+}
+.flex-col {
+  display: flex;
 }

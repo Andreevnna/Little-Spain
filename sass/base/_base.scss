@@ -1,0 +1,27 @@
+html {
+  @extend %font;
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+p {
+  margin: 8px 0;
+}
+a {
+  color: $color-dark;
+}
+body {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: auto;
+  background: $color-light;
+  color: $color-dark;
+  padding: 0 0px;
+  @include media-mobile {
+    
+  }
+}
+h1, h2 {
+  font-family: Lighthaus;
+  font-size: 4rem;
+}

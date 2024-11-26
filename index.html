@@ -11,47 +11,71 @@
 </head>
 
 <body>
-  <section class="products">
+  <section id="main" class="main">
     <div class="wrapper">
-      <h2>Наша продукция</h2>
+      <div class="flex-container gap">
+        <div class="left-part">
+          <div class="flex-container gap">
+            <div class="col-1">
+              <h1 class="title">Маленькая<div class="accent-title">Испания</div>
+              </h1>
+              <nav class="menu">
+                <ul>
+                  <li><a href="/#main">Главная</a></li>
+                  <li><a href="/#our-products">Наша продукция</a></li>
+                  <li><a href="/#contacts">Контакты</a></li>
+                </ul>
+              </nav>
+              <div class="social-networks-links">
+                <a target="_blank" href="https://www.instagram.com/little_spain.spb"><span class="icon icon-instagram"></span></a>
+                <a target="_blank" href="https://www.t.me/malenkaya_ispaniya"><span class="icon icon-telegram"></span></a>
+              </div>
+            </div>
+            <div class="col-2">
+              <a href="/#main"><img class="logo" src="/images/logo.png" alt=""></a>
+            </div>
+          </div>
+          <p class="sub-title">Маленькая Испания - это лавка европейских деликатесов, где Вы можете
+            приобрести настоящий испанский хамон,итальянский пармезан
+            и много других лакомств</p>
+        </div>
+        <div class="right-part">
+          <img src="/images/photo-main.jpeg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="our-products" class="products">
+    <div class="wrapper">
+      <h2>
+        <div class="decor-title">Наша</div>продукция
+      </h2>
       <div class="our-products">
-        <div class="product-category">
+        <!-- <div class="product-category">
           <ul class="product-category__nav">
             <li class="product-category__filter">Все</li>
             <li class="product-category__filter">Сыры</li>
             <li class="product-category__filter">Бакалея</li>
             <li class="product-category__filter">Наборы</li>
           </ul>
-        </div>
-
-        <div class="layout-2-columns">
+        </div> -->
+        <div class="flex-container gap-products">
           <div class="filters">
-            <!-- <div class="filter-by-country">
+            <div>
+              <h4>Категория:</h4>
+              <label><input type="checkbox" class="category" value="cheese"> Сыр</label><br>
+              <label><input type="checkbox" class="category" value="groceries"> Колбаса</label><br>
+              <label><input type="checkbox" class="category" value="sets"> Наборы</label><br>
+            </div>
+            <div class="filter-by-country">
               <h4>Страна-производитель:</h4>
-              <ul class="filter-by-country__list">
-                <li>
-                  <input id="france" type="checkbox">
-                  <label for="france">Франция</label>
-                </li>
-                <li>
-                  <input id="italy" type="checkbox">
-                  <label for="italy">Италия</label>
-                </li>
-                <li>
-                  <input id="spain" type="checkbox">
-                  <label for="spain">Испания</label>
-                </li>
-                <li>
-                  <input id="holland" type="checkbox">
-                  <label for="holland">Голандия</label>
-                </li>
-                <li>
-                  <input id="switzerland" type="checkbox">
-                  <label for="switzerland">Швейцария</label>
-                </li>
-              </ul>
-            </div> -->
-            <div class="sort-content">
+              <label><input type="checkbox" class="country" value="spain"> Испания</label><br>
+              <label><input type="checkbox" class="country" value="italy"> Италия</label><br>
+              <label><input type="checkbox" class="country" value="france"> Франция</label><br>
+              <label><input type="checkbox" class="country" value="switzerland"> Швейцария</label><br>
+              <label><input type="checkbox" class="country" value="holland"> Голандия</label><br>
+            </div>
+            <!-- <div class="sort-content">
               <p>Сортировка по категории</p>
               <select name="" id="sortCategory">
                 <option value="all">Все</option>
@@ -77,7 +101,7 @@
                 <option value="asc">По возрастанию</option>
                 <option value="desc">По убыванию</option>
               </select>
-            </div>
+            </div> -->
           </div>
           <div class="list-products">
             <div class="product layout-3-columns">
@@ -87,6 +111,54 @@
       </div>
     </div>
   </section>
+  <section id="contacts" class="contacts">
+    <div class="wrapper">
+      <div class="flex-container">
+        <div class="col-1">
+          <div class="img-contacts">
+            <img src="/images/photo-contacts.jpeg" alt="">
+          </div>
+        </div>
+        <div class="col-2-footer">
+          <h2>Контакты</h2>
+          <div class="flex-col">
+            <div class="col-left">
+              <div class="shops">
+                <h3>Магазины:</h3>
+                <p>Ул. Звёздная, 4/2</p>
+                <p>Полтавский проезд, 2</p>
+                <p>Б.П. Васильевского острова, 16</p>
+              </div>
+              <div class="phone">
+                <h3>Телефон:</h3>
+                <p>+7 (981) 934-34-38</p>
+              </div>
+              <div class="social-networks">
+                <h3>Социальные сети:</h3>
+                <a target="_blank" href="https://www.instagram.com/little_spain.spb"><span class="icon icon-instagram"></span></a>
+                <a target="_blank" href="https://www.t.me/malenkaya_ispaniya"><span class="icon icon-telegram"></span></a>
+              </div>
+            </div>
+            <div class="col-right">
+              <div class="hours">
+                <h3>Режим работы:</h3>
+                <p>ПН - ВСК: 11:00 - 22:00</p>
+              </div>
+              <a href="/#main"><img class="logo" src="/images/logo.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer-text">
+        <p class="montserrat">© Copyright 2024, All Rights Reserved</p>
+        <p class="allura"><a href="https://t.me/Aandreevvnna">Developed by Buzmakova A.A.</a></p>
+      </div>
+    </div>
+  </footer>
   <script src="js/controller.js" type="module"></script>
   <script src="js/model.js" type="module"></script>
   <script src="js/view.js" type="module"></script>

@@ -1,13 +1,105 @@
-.layout-2-columns {
-  display: grid;
-  grid-template-columns: 1fr 5fr;
+html {
+  font-family: Manrope;
 }
 
 .layout-3-columns {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+@media (max-width: 768px) {
+  .layout-3-columns {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 380px) {
+  .layout-3-columns {
+    grid-template-columns: 1fr;
+  }
+}
 
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.gap {
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+
+.gap-products {
+  -moz-column-gap: 76px;
+       column-gap: 76px;
+}
+
+.flex-col {
+  display: flex;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: auto;
+}
+
+.allura {
+  font-family: Allura;
+  font-size: 2.4rem;
+  letter-spacing: 0.1rem;
+}
+
+.montserrat {
+  font-family: Montserrat;
+  font-size: 1.6rem;
+}
+
+.footer-text {
+  margin: 50px;
+  text-align: center;
+}
+
+@font-face {
+  font-family: Manrope;
+  src: url(../../fonts/Manrope-Light.ttf);
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: Manrope;
+  src: url(../../fonts/Manrope-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Manrope;
+  src: url(../../fonts/Manrope-SemiBold.ttf);
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: Manrope;
+  src: url(../../fonts/Manrope-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Lighthaus;
+  src: url(../../fonts/Lighthaus.otf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Allura;
+  src: url(../../fonts/Allura-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(../../fonts/Montserrat-VariableFont_wght.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
 .product__img {
   height: 221px;
   height: 221px;
@@ -22,11 +114,185 @@
 }
 
 .product {
+  padding-bottom: 57px;
   -moz-column-gap: 10px;
        column-gap: 10px;
+  row-gap: 20px;
 }
 
-.wrapper {
-  max-width: 933px;
-  margin: auto;
+.decor-title {
+  font-size: 24px;
+}
+
+.products h2 {
+  margin: 55px auto;
+  width: 300px;
+}
+
+.product__card {
+  width: 221px;
+  height: 277px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: -1px 1px 3px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.product__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product__price {
+  display: flex;
+  justify-content: space-between;
+}
+.product__price p {
+  margin: 0 5px 0 5px;
+}
+
+.product__name h5 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 5px;
+}
+
+.price {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.currency {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.accent-title {
+  font-size: 3.2rem;
+  text-align: right;
+  color: #AD223F;
+}
+
+.title {
+  margin-top: 59px;
+}
+
+.menu {
+  padding-top: 88px;
+}
+.menu ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.menu ul li {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+.menu ul li a {
+  color: #6E6E6E;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.sub-title {
+  font-weight: 300;
+  font-size: 1.5rem;
+  text-align: right;
+  width: 306px;
+}
+
+.col-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right-part {
+  width: 571px;
+  height: 606px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.right-part img {
+  width: 100%;
+}
+
+.img-contacts {
+  width: 409px;
+  height: 459px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.img-contacts img {
+  width: 100%;
+}
+
+.contacts .col-2-footer {
+  padding: 0 54px 0 77px;
+  border-right: 1px solid #AD223F;
+  border-bottom: 1px solid #AD223F;
+  border-top: 1px solid #AD223F;
+  border-radius: 10px;
+}
+.contacts .col-right {
+  padding: 0 0 0 65px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+p {
+  margin: 8px 0;
+}
+
+a {
+  color: #000;
+}
+
+body {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: auto;
+  background: #fff;
+  color: #000;
+  padding: 0 0px;
+}
+h1, h2 {
+  font-family: Lighthaus;
+  font-size: 4rem;
+}
+
+.icon {
+  display: inline-block;
+}
+
+.icon-instagram {
+  background-image: url(../../images/instagram.svg);
+  width: 22px;
+  height: 22px;
+}
+
+.icon-telegram {
+  background-image: url(../../images/telegram.svg);
+  width: 22px;
+  height: 22px;
+}
+
+.logo {
+  width: 99px;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,57 @@
+.accent-title {
+  font-size: 3.2rem;
+  text-align: right;
+  color: $color-accent;
+}
+.title {
+  margin-top: 59px;
+}
+.menu {
+  padding-top: 88px;
+  ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+
+    li {
+      font-size: 1.8rem;
+      text-transform: uppercase;
+
+      a {
+        color: #6E6E6E;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+    }
+  }
+}
+
+.sub-title {
+  font-weight: 300;
+  font-size: 1.5rem;
+  text-align: right;
+  width: 306px;
+}
+
+.col-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.left-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.right-part {
+  width: 571px;
+  height: 606px;
+  overflow: hidden;
+  border-radius: 10px;
+  img {
+    width: 100%;
+  }
+}

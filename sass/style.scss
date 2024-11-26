@@ -1,3 +1,19 @@
+// @import '../sass/base/normalize';
+
+@import '../sass/abstract/constants';
+@import '../sass/abstract/mixins';
+@import '../sass/abstract/placeholders';
+
 @import '../sass/layouts/layouts';
-@import '../sass/component/list-products';
 @import '../sass/layouts/wrapper';
+@import '../sass/layouts/footer';
+
+@import '../sass/font/font-face';
+
+@import '../sass/component/list-products';
+@import '../sass/component/main';
+@import '../sass/component/contacts';
+
+@import '../sass/base/base';
+@import '../sass/base/icons';
+@import '../sass/base/logo';
