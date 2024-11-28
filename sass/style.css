@@ -7,16 +7,6 @@ html {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
-@media (max-width: 768px) {
-  .layout-3-columns {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media (max-width: 380px) {
-  .layout-3-columns {
-    grid-template-columns: 1fr;
-  }
-}
 
 .flex-container {
   display: flex;
@@ -244,7 +234,7 @@ html {
   border-radius: 10px;
 }
 .right-part img {
-  width: 100%;
+  max-width: 571px;
 }
 
 .img-contacts {
@@ -254,7 +244,7 @@ html {
   border-radius: 10px;
 }
 .img-contacts img {
-  width: 100%;
+  max-width: 409px;
 }
 
 .contacts .col-2-footer {
@@ -285,6 +275,7 @@ a {
 }
 
 body {
+  max-width: 1440px;
   margin: 0;
   font-size: 1.4rem;
   font-weight: 400;
@@ -293,6 +284,7 @@ body {
   color: #000;
   padding: 0 0px;
 }
+
 h1, h2 {
   font-family: Lighthaus;
   font-size: 4rem;

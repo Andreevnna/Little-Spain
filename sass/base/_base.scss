@@ -10,6 +10,7 @@ a {
   color: $color-dark;
 }
 body {
+  max-width: 1440px;
   margin: 0;
   font-size: 1.4rem;
   font-weight: 400;
@@ -17,9 +18,6 @@ body {
   background: $color-light;
   color: $color-dark;
   padding: 0 0px;
-  @include media-mobile {
-    
-  }
 }
 h1, h2 {
   font-family: Lighthaus;
