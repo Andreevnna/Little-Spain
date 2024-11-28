@@ -1,0 +1,17 @@
+input[type="checkbox"]:checked + .custom-checkbox {
+  background-color: $color-accent; /* Цвет при нажатии */
+  border: 1px solid $color-accent;
+}
+// input[type="checkbox"] {
+//   display: none;
+// }
+
+/* Создаем новый стиль для чекбокса */
+.custom-checkbox {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #000000;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}

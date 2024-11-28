@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-family: Manrope;
 }
@@ -60,46 +61,63 @@ html {
 
 @font-face {
   font-family: Manrope;
-  src: url(../../fonts/Manrope-Light.ttf);
+  src: url(/../../fonts/Manrope-Light.ttf);
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: Manrope;
-  src: url(../../fonts/Manrope-Regular.ttf);
+  src: url(/../../fonts/Manrope-Regular.ttf);
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: Manrope;
-  src: url(../../fonts/Manrope-SemiBold.ttf);
+  src: url(./../../fonts/Manrope-SemiBold.ttf);
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: Manrope;
-  src: url(../../fonts/Manrope-Bold.ttf);
+  src: url(./../../fonts/Manrope-Bold.ttf);
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: Lighthaus;
-  src: url(../../fonts/Lighthaus.otf);
+  src: url(./../../fonts/Lighthaus.otf);
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: Allura;
-  src: url(../../fonts/Allura-Regular.ttf);
+  src: url(./../../fonts/Allura-Regular.ttf);
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: Montserrat;
-  src: url(../../fonts/Montserrat-VariableFont_wght.ttf);
+  src: url(./../../fonts/Montserrat-VariableFont_wght.ttf);
   font-weight: 400;
   font-style: normal;
 }
+.product {
+  padding-bottom: 57px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: 20px;
+}
+
+.decor-title {
+  font-size: 24px;
+  position: relative;
+}
+
+.products h2 {
+  margin: 55px auto;
+  width: 300px;
+}
+
 .product__img {
   height: 221px;
   height: 221px;
@@ -111,22 +129,8 @@ html {
 }
 .product__img img {
   width: 100%;
-}
-
-.product {
-  padding-bottom: 57px;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
-  row-gap: 20px;
-}
-
-.decor-title {
-  font-size: 24px;
-}
-
-.products h2 {
-  margin: 55px auto;
-  width: 300px;
+  transition: scale 0.7s;
+  scale: 1;
 }
 
 .product__card {
@@ -135,6 +139,11 @@ html {
   border: 1px solid rgba(0, 0, 0, 0.2);
   box-shadow: -1px 1px 3px 1px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
+  cursor: pointer;
+}
+.product__card:hover img {
+  transition: scale 0.7s;
+  scale: 1.1;
 }
 
 .product__description {
@@ -175,6 +184,12 @@ html {
 
 .title {
   margin-top: 59px;
+  position: relative;
+}
+
+.active {
+  opacity: 1;
+  border-bottom: 1px solid #AD223F;
 }
 
 .menu {
@@ -189,11 +204,17 @@ html {
 .menu ul li {
   font-size: 1.8rem;
   text-transform: uppercase;
+  padding: 0 0 7px 0;
 }
 .menu ul li a {
-  color: #6E6E6E;
+  color: #000;
+  opacity: 0.6;
   text-decoration: none;
   cursor: pointer;
+  transition: opacity 0.7s;
+}
+.menu ul li a:hover {
+  opacity: 1;
 }
 
 .sub-title {
@@ -206,13 +227,13 @@ html {
 .col-2 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .left-part {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -279,20 +300,99 @@ h1, h2 {
 
 .icon {
   display: inline-block;
+  margin: 0 7px 0 0;
+  transition: opacity 0.3s;
+  opacity: 0.6;
+}
+.icon:hover {
+  opacity: 1;
 }
 
 .icon-instagram {
-  background-image: url(./../../images/instagram.svg);
+  background-image: url(/../../images/instagram.svg);
   width: 22px;
   height: 22px;
 }
 
 .icon-telegram {
-  background-image: url(./../../images/telegram.svg);
+  background-image: url(/../../images/telegram.svg);
   width: 22px;
   height: 22px;
 }
 
 .logo {
   width: 99px;
+}
+
+.line-top {
+  border-left: 1px solid #AD223F;
+  height: 130px;
+  margin: 0 0 20px 0;
+}
+
+.line-bottom {
+  border-left: 1px solid #AD223F;
+  height: 200px;
+  margin: 20px 0;
+}
+
+.circle {
+  width: 18px;
+  height: 18px;
+  background-color: #AD223F;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.circle_main {
+  top: -10px;
+  left: 10px;
+}
+
+.circle_products {
+  top: 47px;
+  left: 61px;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #dddddd;
+  color: #616161;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.scroll-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.zoom {
+  transition: transform 0.5s;
+}
+
+.zoom:hover {
+  transform: scale(1.2);
+}
+
+input[type=checkbox]:checked + .custom-checkbox {
+  background-color: #AD223F; /* Цвет при нажатии */
+  border: 1px solid #AD223F;
+}
+
+/* Создаем новый стиль для чекбокса */
+.custom-checkbox {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #000000;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

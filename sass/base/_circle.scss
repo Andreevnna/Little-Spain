@@ -1,0 +1,15 @@
+.circle {
+  width: 18px;
+  height: 18px;
+  background-color: $color-accent;
+  border-radius: 50%;
+  position: absolute;
+}
+.circle_main {
+  top: -10px;
+  left: 10px;
+}
+.circle_products {
+  top: 47px;
+  left: 61px;
+}

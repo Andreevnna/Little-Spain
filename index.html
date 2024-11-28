@@ -11,19 +11,19 @@
 </head>
 
 <body>
-  <section id="main" class="main">
+  <section id="main" class="main section">
     <div class="wrapper">
       <div class="flex-container gap">
         <div class="left-part">
           <div class="flex-container gap">
             <div class="col-1">
-              <h1 class="title">Маленькая<div class="accent-title">Испания</div>
+              <h1 class="title"><div class="circle circle_main"></div>Маленькая<div class="accent-title">Испания</div>
               </h1>
               <nav class="menu">
                 <ul>
-                  <li><a href="/#main">Главная</a></li>
-                  <li><a href="/#our-products">Наша продукция</a></li>
-                  <li><a href="/#contacts">Контакты</a></li>
+                  <li><a class="toggle-button active" data-target="#main" href="/#main">Главная</a></li>
+                  <li><a class="toggle-button" data-target="#our-products" href="/#our-products">Каталог продукции</a></li>
+                  <li><a class="toggle-button" data-target="#contacts" href="/#contacts">Контакты</a></li>
                 </ul>
               </nav>
               <div class="social-networks-links">
@@ -32,7 +32,9 @@
               </div>
             </div>
             <div class="col-2">
+              <div class="line-top"></div>
               <a href="/#main"><img class="logo" src="./images/logo.png" alt=""></a>
+              <div class="line-bottom"></div>
             </div>
           </div>
           <p class="sub-title">Маленькая Испания - это лавка европейских деликатесов, где Вы можете
@@ -45,10 +47,10 @@
       </div>
     </div>
   </section>
-  <section id="our-products" class="products">
+  <section id="our-products" class="products section">
     <div class="wrapper">
       <h2>
-        <div class="decor-title">Наша</div>продукция
+        <div class="decor-title"><div class="circle circle_products"></div>Наша</div>продукция
       </h2>
       <div class="our-products">
         <!-- <div class="product-category">
@@ -111,12 +113,12 @@
       </div>
     </div>
   </section>
-  <section id="contacts" class="contacts">
+  <section id="contacts" class="contacts section">
     <div class="wrapper">
       <div class="flex-container">
         <div class="col-1">
           <div class="img-contacts">
-            <img src="./images/photo-contacts.jpeg" alt="">
+            <img src="/images/photo-contacts.jpeg" alt="">
           </div>
         </div>
         <div class="col-2-footer">
@@ -159,9 +161,11 @@
       </div>
     </div>
   </footer>
+  <a href="#" class="scroll-to-top" id="scrollToTopBtn">↑</a>
   <script src="js/controller.js" type="module"></script>
   <script src="js/model.js" type="module"></script>
   <script src="js/view.js" type="module"></script>
+  <script src="js/button.js" type="module"></script>
 </body>
 
 </html>
