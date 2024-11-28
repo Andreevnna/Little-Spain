@@ -91,6 +91,10 @@ html {
   font-weight: 400;
   font-style: normal;
 }
+.our-products {
+  min-height: 700px;
+}
+
 .product {
   padding-bottom: 57px;
   -moz-column-gap: 10px;
@@ -186,6 +190,7 @@ html {
   padding-top: 88px;
 }
 .menu ul {
+  margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
@@ -214,6 +219,12 @@ html {
   width: 306px;
 }
 
+.col-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .col-2 {
   display: flex;
   flex-direction: column;
@@ -224,12 +235,17 @@ html {
 .left-part {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 }
 
 .right-part {
+  background-image: url("./../images/photo-main.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 571px;
-  height: 606px;
+  height: 797px;
   overflow: hidden;
   border-radius: 10px;
 }
@@ -247,6 +263,9 @@ html {
   max-width: 409px;
 }
 
+.contacts {
+  padding-top: 60px;
+}
 .contacts .col-2-footer {
   padding: 0 54px 0 77px;
   border-right: 1px solid #AD223F;
@@ -324,8 +343,8 @@ h1, h2 {
 
 .line-bottom {
   border-left: 1px solid #AD223F;
-  height: 200px;
-  margin: 20px 0;
+  height: 350px;
+  margin: 20px 0 0 0;
 }
 
 .circle {
@@ -387,4 +406,16 @@ input[type=checkbox]:checked + .custom-checkbox {
   display: inline-block;
   position: relative;
   cursor: pointer;
+}
+
+.button_menu {
+  background-color: #AD223F;
+  padding: 10px 15px;
+  color: #fff;
+  border-radius: 5px;
+  display: block;
+  width: 165px;
+  height: 22px;
+  text-align: center;
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
