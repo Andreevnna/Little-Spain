@@ -248,6 +248,13 @@ html {
   align-items: center;
 }
 
+.img-text {
+  display: flex;
+}
+.img-text img {
+  width: 121px;
+}
+
 .right-part {
   position: relative;
   overflow: hidden;
@@ -275,6 +282,7 @@ html {
 }
 
 .contacts {
+  position: relative;
   padding-top: 60px;
 }
 .contacts .col-2-footer {
@@ -370,23 +378,35 @@ h1, h2 {
 .icon-cheese {
   position: absolute;
   background-image: url(./../images/icon-cheese.svg);
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   z-index: 0;
-  bottom: -40px;
-  left: 80px;
+  bottom: 0px;
+  left: 130px;
   background-repeat: no-repeat;
 }
 
-.icon-meat {
+.icon-bag {
   position: absolute;
-  background-image: url(./../images/icon-meat.svg);
+  background-image: url(./../images/icon-bag.svg);
   width: 200px;
   height: 200px;
   z-index: 0;
-  bottom: -40px;
-  left: 80px;
+  bottom: -25px;
+  left: 101px;
   background-repeat: no-repeat;
+}
+
+.icon-shop {
+  position: absolute;
+  background-image: url(./../images/icon-shop.svg);
+  z-index: 0;
+  width: 200px;
+  height: 200px;
+  top: -12px;
+  right: 162px;
+  background-repeat: no-repeat;
+  rotate: z 30deg;
 }
 
 .logo {

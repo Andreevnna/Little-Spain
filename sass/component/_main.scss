@@ -73,7 +73,12 @@
   justify-content: space-between;
   align-items: center;
 }
-
+.img-text {
+  display: flex;
+  img {
+    width: 121px;
+  }
+}
 .right-part {
   position: relative;
   // .main__img {
