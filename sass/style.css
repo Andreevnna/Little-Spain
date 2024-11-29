@@ -93,6 +93,7 @@ html {
 }
 .our-products {
   min-height: 700px;
+  position: relative;
 }
 
 .product {
@@ -380,9 +381,9 @@ h1, h2 {
   background-image: url(./../images/icon-cheese.svg);
   width: 150px;
   height: 150px;
-  z-index: 0;
-  bottom: 0px;
-  left: 130px;
+  z-index: -1;
+  top: 250px;
+  left: 153px;
   background-repeat: no-repeat;
 }
 
