@@ -1,5 +1,6 @@
 .our-products {
   min-height: 700px;
+
 }
 .product {
   padding-bottom: 57px;
@@ -11,8 +12,8 @@
   font-size: 24px;
   position: relative;
 }
-
 .products {
+  position: relative;
   h2 {
     margin: 55px auto;
     width: 300px;
@@ -37,6 +38,7 @@
 }
 
 .product__card {
+  background-color: $color-light;
   width: 221px;
   height: 277px;
   border: 1px solid rgba($color: $color-dark, $alpha: 0.2);

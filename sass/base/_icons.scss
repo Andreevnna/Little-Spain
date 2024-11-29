@@ -17,3 +17,23 @@
   width: 22px;
   height: 22px;
 }
+.icon-ham {
+  position: absolute;
+  background-image: url(./../images/icon-hamon.svg);
+  z-index: 0;
+  width: 150px;
+  height: 150px;
+  top: 40px;
+  right: 200px;
+  background-repeat: no-repeat;
+}
+.icon-cheese {
+  position: absolute;
+  background-image: url(./../images/icon-cheese.svg);
+  width: 200px;
+  height: 200px;
+  z-index: 0;
+  bottom: -40px;
+  left: 80px;
+  background-repeat: no-repeat;
+}

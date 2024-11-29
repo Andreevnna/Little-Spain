@@ -3,6 +3,7 @@
   height: 459px;
   overflow: hidden;
   border-radius: 10px;
+  box-shadow: -2px 2px 3px 1px rgba(91, 91, 91, 0.4);
   img {
     max-width: 409px;
     // width: 100%;
@@ -16,6 +17,8 @@
     border-bottom: 1px solid $color-accent;
     border-top: 1px solid $color-accent;
     border-radius: 10px;
+    background-color: $color-light;
+    box-shadow: 0px 2px 8px 0px rgba(91, 91, 91, 0.4);
   }
   .col-right {
     padding: 0 0 0 65px;
