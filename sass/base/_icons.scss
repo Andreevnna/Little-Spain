@@ -27,9 +27,30 @@
   right: 200px;
   background-repeat: no-repeat;
 }
+.icon-salami {
+  position: absolute;
+  background-image: url(./../images/icon-salami.svg);
+  z-index: 0;
+  width: 200px;
+  height: 200px;
+  top: 10px;
+  right: 150px;
+  background-repeat: no-repeat;
+  rotate: z 30deg;
+}
 .icon-cheese {
   position: absolute;
   background-image: url(./../images/icon-cheese.svg);
+  width: 200px;
+  height: 200px;
+  z-index: 0;
+  bottom: -40px;
+  left: 80px;
+  background-repeat: no-repeat;
+}
+.icon-meat {
+  position: absolute;
+  background-image: url(./../images/icon-meat.svg);
   width: 200px;
   height: 200px;
   z-index: 0;
