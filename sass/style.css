@@ -248,6 +248,7 @@ html {
   height: 797px;
   overflow: hidden;
   border-radius: 10px;
+  box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.4);
 }
 .right-part img {
   max-width: 571px;
