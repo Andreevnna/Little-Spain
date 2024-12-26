@@ -20,7 +20,6 @@ scrollToTopBtn.onclick = function (event) {
 
 function toggleButtonMenu(e) {
 
-  debugger
 
   if (e.target.classList.contains("toggle-button")) {
     if (e.target.classList.contains('active')) {

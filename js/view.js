@@ -23,7 +23,7 @@ export class View {
           </div>
           <div class="product__price">
             <p>${product.description}</p>
-            <p class="price">${product.price} <span class="currency">руб.</span></p>
+            <p class="price"><span class="sm">${product.wt} г/</span>${product.price} <span class="currency">руб.</span></p>
           </div>
         </div>
       </div>`

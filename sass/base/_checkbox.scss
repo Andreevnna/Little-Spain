@@ -1,17 +1,42 @@
-input[type="checkbox"]:checked + .custom-checkbox {
-  background-color: $color-accent; /* Цвет при нажатии */
-  border: 1px solid $color-accent;
-}
-// input[type="checkbox"] {
-//   display: none;
-// }
-
-/* Создаем новый стиль для чекбокса */
 .custom-checkbox {
-  width: 20px;
-  height: 20px;
-  border: 1px solid #000000;
-  display: inline-block;
-  position: relative;
+  display: inline-flex;
+  align-items: center;
   cursor: pointer;
+}
+
+.custom-checkbox input {
+  display: none; /* Скрываем оригинальный чекбокс */
+}
+
+.checkmark {
+  width: 20px; /* Ширина чекбокса */
+  height: 20px; /* Высота чекбокса */
+  background-color: #d3d3d3; /* Серый фон */
+  border-radius: 10px; /* Округлость */
+  margin-right: 10px; /* Отступ справа */
+  position: relative;
+}
+
+.custom-checkbox input:checked + .checkmark {
+  background-color: #af4c4c; /* Цвет фона, когда чекбокс выбран */
+}
+
+.checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.custom-checkbox input:checked + .checkmark::after {
+  display: block;
+}
+
+.checkmark::after {
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white; /* Цвет галочки */
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
 }

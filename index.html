@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <!-- добавить фавикон -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
@@ -14,7 +15,6 @@
 <body>
   <section id="main" class="main section">
     <!-- <div class="icon-bag"></div> -->
-
     <div class="wrapper">
       <div class="flex-container gap">
         <div class="left-part">
@@ -26,8 +26,7 @@
               <nav class="menu">
                 <ul>
                   <li><a class="toggle-button active" data-target="#main" href="#main">Главная</a></li>
-                  <li><a class="toggle-button" data-target="#our-products" href="#our-products">Каталог продукции</a>
-                  </li>
+                  <li><a class="toggle-button" data-target="#our-products" href="#our-products">Каталог продукции</a></li>
                   <li><a class="toggle-button" data-target="#contacts" href="#contacts">Контакты</a></li>
                 </ul>
               </nav>
@@ -51,7 +50,7 @@
             <p class="sub-title">Маленькая Испания - это лавка европейских деликатесов, где Вы можете
               приобрести настоящий испанский хамон, итальянский пармезан
               и много других лакомств.</p>
-              <!-- <img src="./images/icon-bag.svg" alt=""> -->
+            <!-- <img src="./images/icon-bag.svg" alt=""> -->
           </div>
         </div>
         <div class="right-part">
@@ -80,17 +79,19 @@
           <div class="filters">
             <div>
               <h4>Категория:</h4>
-              <label><input type="checkbox" class="category" value="cheese"> Сыр</label><br>
-              <label><input type="checkbox" class="category" value="groceries"> Бакалея</label><br>
-              <label><input type="checkbox" class="category" value="sets"> Наборы</label><br>
+              <label class="custom-checkbox"><input type="checkbox" class="category" value="cheese"><span class="checkmark"></span>Сыр</label><br>
+              <label class="custom-checkbox"><input type="checkbox" class="category" value="meat"><span class="checkmark"></span>Мясо</label><br>
+              <label class="custom-checkbox"><input type="checkbox" class="category" value="pasts"><span class="checkmark"></span>Паста</label><br>
+              <label class="custom-checkbox"><input type="checkbox" class="category" value="snacks"><span class="checkmark"></span>Закуски</label><br>
+              <label class="custom-checkbox"><input type="checkbox" class="category" value="sets"><span class="checkmark"></span>Наборы</label><br>
             </div>
             <div class="filter-by-country">
               <h4>Страна-производитель:</h4>
-              <label><input type="checkbox" class="country" value="spain"> Испания</label><br>
-              <label><input type="checkbox" class="country" value="italy"> Италия</label><br>
-              <label><input type="checkbox" class="country" value="france"> Франция</label><br>
-              <label><input type="checkbox" class="country" value="switzerland"> Швейцария</label><br>
-              <label><input type="checkbox" class="country" value="holland"> Голандия</label><br>
+              <label class="custom-checkbox"><input type="checkbox" class="country" value="spain"><span class="checkmark"></span>Испания</label><br>
+              <label class="custom-checkbox"><input type="checkbox" class="country" value="italy"><span class="checkmark"></span>Италия</label><br>
+              <label class="custom-checkbox"><input type="checkbox" class="country" value="france"><span class="checkmark"></span>Франция</label><br>
+              <label class="custom-checkbox"><input type="checkbox" class="country" value="switzerland"><span class="checkmark"></span>Швейцария</label><br>
+              <label class="custom-checkbox"><input type="checkbox" class="country" value="holland"><span class="checkmark"></span>Голандия</label><br>
             </div>
           </div>
           <div class="list-products">
@@ -101,7 +102,7 @@
         <div class="icon-cheese"></div>
       </div>
     </div>
-    
+
   </section>
   <section id="contacts" class="contacts section">
     <!-- <div class="icon-shop"></div> -->
@@ -154,11 +155,20 @@
       </div>
     </div>
   </footer>
+  <!-- <div class="modal-card-products">
+    <div class="modal-card__img">
+      <img src="./images/hamon.jpeg" alt="">
+    </div>
+    <div class="modal-card__description">
+      
+    </div>
+  </div> -->
   <a href="#" class="scroll-to-top" id="scrollToTopBtn">↑</a>
   <script src="js/controller.js" type="module"></script>
   <script src="js/model.js" type="module"></script>
   <script src="js/view.js" type="module"></script>
   <script src="js/button.js" type="module"></script>
+  <script src="js/modal.js" type="module"></script>
 </body>
 
 </html>

@@ -7,7 +7,6 @@
   column-gap: 10px;
   row-gap: 20px;
 }
-
 .decor-title {
   font-size: 24px;
   position: relative;
@@ -19,9 +18,7 @@
     width: 300px;
   }
 }
-
 .product__img {
-
   height: 221px;
   height: 221px;
   overflow: hidden;
@@ -53,13 +50,11 @@
     }
   }
 }
-
 .product__description {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
 .product__price {
   display: flex;
   justify-content: space-between;
@@ -68,7 +63,6 @@
     margin: 0 5px 0 5px;
   }
 }
-
 .product__name {
   h5 {
     font-size: 1.5rem;
@@ -76,12 +70,10 @@
     margin: 5px;
   }
 }
-
 .price {
   font-weight: 600;
   font-size: 1.5rem;
 }
-
 .currency {
   font-weight: 300;
   font-size: 1.2rem;

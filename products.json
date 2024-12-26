@@ -3,65 +3,73 @@
     "name": "Хамон Серрано",
     "description": "блок",
     "price": "3400",
-    "category": "groceries",
+    "category": "meat",
     "images": "hamon.jpeg",
-    "country": "holland"
+    "country": "holland",
+    "wt": "200"
   }, 
   {
     "name": "Хамон Серрано",
     "description": "Капля",
     "price": "3200",
-    "category": "groceries",
+    "category": "meat",
     "images": "hamon.jpeg",
-    "country": "italy"
+    "country": "italy",
+    "wt": "100"
   },
   {
-    "name": "Хамон Иберико",
-    "description": "Де Себо блок",
+    "name": "Хамон Иберико Де Себо",
+    "description": "блок",
     "price": "6000",
-    "category": "groceries",
+    "category": "meat",
     "images": "hamon.jpeg",
-    "country": "spain"
+    "country": "spain",
+    "wt": "100"
   },
   {
-    "name": "Хамон Иберико",
-    "description": "Де Себо б/к",
+    "name": "Хамон Иберико Де Себо",
+    "description": "б/к",
     "price": "5500",
-    "category": "groceries",
+    "category": "meat",
     "images": "hamon.jpeg",
-    "country": "holland"
+    "country": "holland",
+    "wt": "100"
   },
   {
-    "name": "Хамон Иберико",
-    "description": "Де Бейота 75% б/к",
+    "name": "Хамон Иберико Де Бейота",
+    "description": "75% б/к",
     "price": "16500",
-    "category": "groceries",
+    "category": "meat",
     "images": "hamon.jpeg",
-    "country": "spain"
+    "country": "spain",
+    "wt": "100"
   },
   {
-    "name": "Хамон Иберико Бейота ",
+    "name": "Хамон Иберико Бейота",
     "description": "100% 5J",
     "price": "29000",
-    "category": "groceries",
+    "category": "meat",
     "images": "hamon.jpeg",
-    "country": "italy"
+    "country": "italy",
+    "wt": "200"
   },
   {
     "name": "Брезаола (говядина)",
     "description": "Италия",
     "price": "3700",
-    "category": "groceries",
+    "category": "meat",
     "images": "hamon.jpeg",
-    "country": "italy"
+    "country": "italy",
+    "wt": "200"
   },
   {
     "name": "Сесина де Лион",
     "description": "",
     "price": "5800",
-    "category": "groceries",
+    "category": "meat",
     "images": "hamon.jpeg",
-    "country": "spain"
+    "country": "spain",
+    "wt": "200"
   },
   {
     "name": "Пармезан",
@@ -69,7 +77,8 @@
     "price": "3600",
     "category": "cheese",
     "images": "cheese.jpeg",
-    "country": "switzerland"
+    "country": "switzerland",
+    "wt": "200"
   },
   {
     "name": "Манчего (овечий)",
@@ -77,7 +86,8 @@
     "price": "3550",
     "category": "cheese",
     "images": "cheese.jpeg",
-    "country": "france"
+    "country": "france",
+    "wt": "200"
   },
   {
     "name": "Манчего (овечий)",
@@ -85,7 +95,8 @@
     "price": "3850",
     "category": "cheese",
     "images": "cheese.jpeg",
-    "country": "italy"
+    "country": "italy",
+    "wt": "100"
   },
   {
     "name": "Грана Падано",
@@ -93,7 +104,8 @@
     "price": "2800",
     "category": "cheese",
     "images": "cheese.jpeg",
-    "country": "switzerland"
+    "country": "switzerland",
+    "wt": "200"
   },
   {
     "name": "Пекорино Романо",
@@ -101,7 +113,8 @@
     "price": "3800",
     "category": "cheese",
     "images": "cheese.jpeg",
-    "country": "france"
+    "country": "france",
+    "wt": "100"
   },
   {
     "name": "Набор сыров",
@@ -109,7 +122,8 @@
     "price": "10000",
     "category": "sets",
     "images": "set.jpeg",
-    "country": "switzerland"
+    "country": "switzerland",
+    "wt": "100"
   },
   {
     "name": "Набор сыров",
@@ -117,6 +131,7 @@
     "price": "10000",
     "category": "sets",
     "images": "set.jpeg",
-    "country": "france"
+    "country": "france",
+    "wt": "200"
   }
 ]
