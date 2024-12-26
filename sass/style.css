@@ -464,7 +464,7 @@ h1, h2 {
 
 .scroll-to-top {
   position: fixed;
-  bottom: 20px;
+  bottom: 100px;
   right: 20px;
   background-color: #dddddd;
   color: #616161;
@@ -475,6 +475,7 @@ h1, h2 {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 501;
 }
 
 .scroll-to-top.visible {
